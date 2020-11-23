@@ -16,6 +16,9 @@
             color:#15372c;
             max-width:1440px;
         }
+
+
+/* top section */
         .top
         {
             display: grid;
@@ -128,6 +131,47 @@
             background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/MHome-Image-7_2x.png);
             background-size: 100% 100%;
         }
+
+/* mid section */
+        .mid-page{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 530px;
+            grid-template-areas: "mid-left mid-right"; 
+        } 
+
+        .button{
+            height: 20px;
+            width: 90px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(44, 99, 52);
+            color: white;
+            padding: 15px;
+            
+        }
+        .button:hover{
+            background-color: rgb(2, 31, 2);
+            transition: 0.8s;
+        }
+        .img-1{
+            width: 100%;
+            height: 530px;
+        }
+        .midle-cont{
+            height: 265px;
+            width: 500px;
+            margin: 150px auto;
+            
+        }
+        .text{
+            font-size: 20px;
+        }
+
+
+/* bottom section */
         .bottom_div {
             display: grid;
             grid-template-areas: "quadrant_1 quadrant_2"
@@ -233,8 +277,12 @@
             display: grid;
         }
         
+
     </style>
     <body>
+
+
+<!-- top section -->
         <div class = "top">
             <div class = "first_left">
                 <div class = "fl_content">
@@ -284,6 +332,26 @@
                 </div>
             </div>
         </div>
+
+
+<!-- middle section -->
+        <div class="mid-page">
+            <div class="mid-left">
+                <div class="midle-cont">
+                <h1>Is your hiring strategy<br/>
+                ready for what's next?</h1>
+                <p class="text">Learn more about Greenhouse Hiring Maturity and find out if your company is moving up the curve.</p>
+                <div class="button">Find Out</div>
+                </div>
+            </div>
+                
+            <div class= "mid-right">
+                <img class = "img-1" src = "https://grnhse-marketing-site-assets.s3.amazonaws.com/production/A-man-smiling-in-a-group-of-coworkers-around-a-table.jpg"/>
+            </div>
+        </div>      
+        
+        
+<!-- bottom section -->
         <div class="bottom_div">
             <div class="quadrant_1">
                <div class="space_1">
@@ -343,8 +411,12 @@
         <div class="footer">
            <div class="footer_1"></div>
            <div class="footer_2"></div>
+
+
+
         <script type = "text/javascript">
 
+// top section
                 var demo = document.getElementById("request_demo")
                 demo.addEventListener("mouseover", function()
                 {
@@ -466,6 +538,12 @@
                    })
                 })
 
+
+// mid section
+
+
+
+// bottom section
                 var hire = document.getElementsByClassName("hire")
                 var story = document.getElementsByClassName("stories")
 
