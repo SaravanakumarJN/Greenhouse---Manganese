@@ -6,11 +6,188 @@
         <title>Applicant tracking system & recruiting software | Greenhouse</title>
     </head>
     <style type = "text/css">
+        .bottom_div {
+            display: grid;
+            grid-template-areas: "quadrant_1 quadrant_2"
+                                 "quadrant_3 quadrant_4";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 300px 500px 530px;
+           
+        }
+        /* .bottom_div > div {
+            border: 1px solid black;
+        } */
+        .space_1 {
+            margin: 40px 80px;
+        }
+        .quadrant_1 {
+            background-color: rgb(20, 39, 20);
+        }
+        .big_font {
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+
+        }
+        .space_2 {
+            margin: 60px 110px;
+            width: 60%;
+        }
+        .sub_head {
+            font-size: 30px;
+            font-family: Untitled Sans,Arial,Helvetica,sans-serif;
+            cursor: pointer;
+            color: rgb(11, 29, 19);
+
+        }
+        .sea_green {
+            color: seagreen;
+        }
+        .space_4 {
+            margin: 60px 110px;
+            width: 60%;
+        }
+        .hire {
+            background-color: seagreen;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 30px;
+            width: 170px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .stories {
+            background-color: seagreen;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 30px;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+        .space_5 {
+            margin: 130px;
+        }
+        .space_5 > h1 {
+            font-size: 40px;
+        }
+        .space_6  {
+           width: 70%;
+           margin: 100px;
+        }
+        .small_img > img {
+            height: 50px;
+            width: 200px;
+        }
+        .space_6 {
+            display: grid;
+            grid-template-areas: "logo_1 logo_2"
+                                 "logo_3 logo_4"
+                                 "logo_5 logo_6";
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 50px;
+        }
+        .space_3 > img {
+            width: 100%;
+            height: 500px;
+        }
+        .line {
+            background-color: seagreen;
+            width: 100%;
+            height: 1px;
+            margin-top: 54px;
+        }
+        .vline {
+            background-color: seagreen;
+            height: 530px;
+            width: 2px;
+            margin-left: 533px;
+            
+        }
+        .footer {
+            background-color: rgb(2, 70, 31);
+            display: grid;
+
+        }
         
     </style>
     <body>
-        
+        <div class="bottom_div">
+            <div class="quadrant_1">
+               <div class="space_1">
+                <p class="sea_green">Distributed hiring & work</p> 
+                <h1 class="big_font">Distributed hiring and remote working – The essential guide</h1 >
+               </div>
+            </div>
+            <div class="quadrant_2">
+                <div class="space_2">
+                    <p class="sea_green">Distributed hiring & work</p>
+                    <p class="sub_head">Best practices for interactive remote interviews<p>
+                    <p class="p_color">As the world moves toward increased virtual interaction with candidates, there are a number of…</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="quadrant_3">
+                <div class="space_3">
+                    <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Woman-working-at-a-laptop-in-a-green-room.jpg" alt="Woman-working-at-a-laptop-in-a-green-room">
+                </div>
+            </div>
+            <div class="quadrant_4">
+               <div class="space_4"> <p class="sea_green">Distributed hiring & work, Talent strategy</p>
+                <p class="sub_head">How to hire in the age of remote work</p>
+                <p class="p_color">Talent teams are facing a new challenge: fully-remote hiring. How can you deliver the best…</p>
+                <br><br><br>
+                <div class="hire">More on distributed hiring</div></div>
+            </div>
+            <div class="quadrant_5">
+               <div class="space_5">
+                    <h1>See who's hiring with Greenhouse </h1>
+                    <div class="stories">See customer stories</div>
+               </div>
+            </div>
+            <div class="quadrant_6">
+                <div class="space_6">
+                    <div class="small_img logo_1">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/InVision-logo.png" alt="InVision-logo">
+                    </div>
+                    <div class="small_img logo_2">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/HubSpot-logo.png" alt="HubSpot-logo">
+                    </div>
+                    <div class="small_img logo_3">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/Squarespace-logo.png" alt="Squarespace-logo">
+                    </div>
+                    <div class="small_img logo_4">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/JD-Power-logo.png" alt="JD-Power-logo">
+                    </div>
+                    <div class="small_img logo_5">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/wayfair-logo.png" alt="wayfair-logo">
+                    </div>
+                    <div class="small_img logo_6">
+                        <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/_logoThumbnail/Harrys-logo.png" alt="Harrys-logo">
+                    </div>
+               </div>
+           </div>
+        </div>
+        <div class="footer">
+           <div class="footer_1"></div>
+           <div class="footer_2"></div>
+        </div>
         <script type = "text/javascript">
+            var hire = document.getElementsByClassName("hire")
+            var story = document.getElementsByClassName("stories")
+
+            hire.addEventListener('click', go_to_hirepage);
+            story.addEventListener('click', go_to_storypage)
+
+            function go_to_hirepage(e) {
+                e.target = "blank"
+            }
+
+            function go_to_storypage(e) {
+
+            }
 
         </script>
     </body>
