@@ -3,14 +3,307 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Applicant tracking system & recruiting software | Greenhouse</title>
     </head>
     <style type = "text/css">
+        body
+        {
+            margin:0px auto;
+            font-family:Arial,Helvetica,sans-serif;
+            color:#15372c;
+            max-width:1440px;
+        }
+        .top
+        {
+            display: grid;
+            grid-template-areas: "first_left first_right"
+                                "second_left second_right" 
+                                "third_left third_right";
+            grid-template-columns:50% 50% ;
+            grid-template-rows: 880px 800px 800px;
+        }
+        .fl_content
+        {
+            margin: 260px 0px 195px 20%;
+            max-width:70%;
+        }
+        .fl_content > h1
+        {
+            font-size: 65px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 110%;
+        }
+        .fl_content > p
+        {
+            font-size: 18px;
+            line-height: 170%;
+        }
+        .first_right
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-two-women-working.jpg);
+            background-size: cover ;
+        }
+        .fr_content
+        {
+            margin:260px 0px 0px 100px;
+            height:285px;
+            width:350px;
+            background-color:white;
+            border-radius:10px;
+            padding: 50px 0px 0px 60px;
+        }
+        .fr_content > h3
+        {
+            font-size:30px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 120%;
+        }
+        .fr_content > h3, .fr_content > label
+        {
+            margin:10px 0px;
+
+        }
+        #email
+        {
+            height:50px;
+            width:290px;
+            border:1px solid #d9d9d9;
+            border-radius:5px;
+            margin:10px 0px;
+        }
+        #request_demo
+        {
+            height:40px;
+            width:150px;
+            border-radius:25px;
+            background-color:#4d4dff;
+            color:white;
+            border:none;
+            margin:10px 0px;
+            outline:none;
+        }
+        .sl_content, .tr_content
+        {
+            margin: 80px 0px 195px 20%;
+            max-width:65%;
+        }
+        .sl_content > h3, .tr_content > h3
+        {
+            font-size:35px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 110%;
+        }
+        .sl_content > div, .tr_content > div
+        {
+            font-size:13px;
+            height:45px;
+            padding-top:35px;
+            margin:0px;
+            border-bottom:1px solid  #8cd9b3;
+        }
+        #ab_recurit, #ab_onboard
+        {
+            height:45px;
+            width:32%;
+            border-radius:25px;
+            border:none;
+            color:white;
+            background-color: #339966;
+            margin-top:45px;
+            outline: none;
+        }
+        .second_right
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Recruiting-Scorecard2m.jpg);
+            background-size: 100% 100%;
+        }
+        .third_left
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/MHome-Image-7_2x.png);
+            background-size: 100% 100%;
+        }
         
     </style>
     <body>
-        
+        <div class = "top">
+            <div class = "first_left">
+                <div class = "fl_content">
+                    <h1>Hire for what's next.</h1>
+                    <p>What's next for many of us is changing. Your company's
+                    ability to hire great talent is an important as ever - so
+                    you'll be ready for whatever's ahead. Whether you need
+                    to scale your team quickly or improve your hiring
+                    process, Greenhouse gives you the right technology,
+                    know-how and support to taken on what's next. 
+                    </p>
+                </div>
+            </div>
+            <div class = "first_right">
+                <div class = "fr_content">
+                    <h3>Ready to talk about<br/>
+                    hiring?
+                    </h3>
+                    <label for="email">Work email address</label><br/>
+                    <input type ="email" id = "email"/><br/>
+                    <button id = "request_demo">Request a demo</button>
+                </div>
+            </div>
+            <div class = "second_left">
+                <div class = "sl_content">
+                    <h3>Optimize every aspect of hiring with Greenhouse Recuriting</h3>
+                    <div>Improve the hiring process for everyone</div>
+                    <div>Attract and hire the best talent</div>
+                    <div>Amplify your team's efficiency and business imapct</div>
+                    <div>Build your idael hiring tech stack with easy integrations</div>
+                    <div>Measure, iterate and improve your hiring process </div>
+                    <button id = "ab_recurit">About Recuriting</button>
+                </div>
+            </div>
+            <div class = "second_right"></div>
+            <div class = "third_left">
+            </div>
+            <div class = "third_right">
+                <div class = "tr_content">
+                    <h3>Provide a great employee experience with Greenhouse Onboarding</h3>
+                    <div>Integrate new hires into the team more quickly</div>
+                    <div>Design personal welcome experiences</div>
+                    <div>Apply consistent and fair processes</div>
+                    <div>Keep everything moving forward with automted tasks</div>
+                    <div>Build a foundation for constant improvement</div>
+                    <button id = "ab_onboard">About Onboarding</button>
+                </div>
+            </div>
+        </div>
         <script type = "text/javascript">
+
+
+                var demo = document.getElementById("request_demo")
+                demo.addEventListener("mouseover", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#1a1aff"
+                } )
+                demo.addEventListener("mouseout", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#4d4dff"
+                })
+
+
+                var recurit = document.getElementById("ab_recurit")
+                recurit.addEventListener("mouseover", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#26734d"
+                } )
+                recurit.addEventListener("mouseout", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#339966"
+                })
+
+                var sl_div = document.querySelectorAll(".sl_content > div")
+                var second_right = document.querySelector(".second_right")
+                sl_div.forEach(function(e,i){
+                    e.addEventListener("mouseover", function()
+                    {
+                        event.currentTarget.style.backgroundColor = "#f2f2f2"
+                    })
+                    e.addEventListener("mouseout", function()
+                    {
+                        event.currentTarget.style.backgroundColor = "white"
+                        event.currentTarget.style.borderBottomColor = "#8cd9b3"
+                    })
+                   e.addEventListener("click", function()
+                   {
+                       switch (i)
+                       {
+                            case 0:
+                                second_right.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Recruiting-Scorecard2m.jpg)"
+                                second_right.style.backgroundSize  = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 1:
+                                second_right.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Pinterest-career-page-mobile.png)"
+                                second_right.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 2:
+                                second_right.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Recruiting-pipeline-report-mobile.png)"
+                                second_right.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 3:
+                                second_right.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Recruiting-Integrations-m.jpg)"
+                                second_right.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 4:
+                                second_right.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/GreenhouseRecruiting-reporting-mobile.png)"
+                                second_right.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                       }
+                   })
+                })
+
+                var onboard = document.getElementById("ab_onboard")
+                onboard.addEventListener("mouseover", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#26734d"
+                } )
+                onboard.addEventListener("mouseout", function()
+                {
+                    event.currentTarget.style.backgroundColor = "#339966"
+                })
+
+                var tr_div = document.querySelectorAll(".tr_content > div")
+                var third_left = document.querySelector(".third_left")
+                tr_div.forEach(function(e,i){
+                    e.addEventListener("mouseover", function()
+                    {
+                        event.currentTarget.style.backgroundColor = "#f2f2f2"
+                    })
+                    e.addEventListener("mouseout", function()
+                    {
+                        event.currentTarget.style.backgroundColor = "white"
+                        event.currentTarget.style.borderBottomColor = "#8cd9b3"
+                    })
+                   e.addEventListener("click", function()
+                   {
+                       switch (i)
+                       {
+                            case 0:
+                                third_left.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/MHome-Image-7_2x.png)"
+                                third_left.style.backgroundSize  = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 1:
+                                third_left.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Onboarding-welcome-experience-m.jpg)"
+                                third_left.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 2:
+                                third_left.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Onboarding-process-mobile.png)"
+                                third_left.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 3:
+                                third_left.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/MHome-Image-10_2x.jpg)"
+                                third_left.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                            case 4:
+                                third_left.style.backgroundImage = "url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Onboarding-new-hire-survey-mobile.jpg)"
+                                third_left.style.backgroundSize = "100% 100%"
+                                event.currentTarget.style.borderBottomColor = "#26734d"
+                                break;
+                       }
+                   })
+                })
+
 
         </script>
     </body>
