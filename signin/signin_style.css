@@ -5,6 +5,11 @@
     grid-template-rows: 100vh;
 }
 
+.left_image{
+    width: 100%;
+    height: 100vh;
+
+}
 .signin_right {
     background-color: white;
     height: 105vh;
