@@ -1,0 +1,140 @@
+body
+{
+    margin:0px;
+}
+.content_grid
+{
+    display: grid;
+    grid-template-areas: "first_left first_right"
+                        "second_left second_right";
+    grid-template-columns: 50% 50%;
+    grid-template-rows:1035px 530px;
+    grid-row-gap: 75px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#15372c;
+    font-size: 15px;
+}
+.first_left
+{
+    background-color:  #f2f2f2;
+}
+.fl_content
+{
+    margin:190px 15.5% 0px 22%;
+}
+.first_right
+{
+    background-color: rgba(76,179,152,.25);
+}
+.fr_content
+{
+    margin:190px 0px 0px 22%;
+    max-width: 55%;
+}
+.fr_form
+{
+    list-style-type: none;
+}
+.fr_form > li span
+{
+    color:red;
+    margin-right:2px
+}
+.second_left
+{
+    border-right:1px solid #8cd9b3;
+}
+.sl_content
+{
+    margin:150px 0px 0px 23%;
+    max-width: 60%;
+}
+.sl_image
+{
+    margin:45px 0px 0px 11.5%;
+    max-width: 70%;
+    display:grid;
+    grid-template-areas: "sl_img1 sl_img2"
+                        "sl_img3 sl_img4"
+                        "sl_img5 sl_img6";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 135px 135px 135px;
+}
+.sl_image img
+{
+    width:80%;
+    margin-left:10%;
+    margin-top:35px;
+}
+.fl_content > h1 
+{
+    font-size: 55px;
+}
+.fl_content > p
+{
+    font-size: 18px;
+    line-height: 170%;
+    margin-top:30px;
+}
+.fl_content > ul 
+{
+    margin:40px 0px; 
+}
+.fl_content > ul > li
+{
+    margin:20px;
+}
+.fl_content > h1 , .sl_content > h1
+{
+    font-family: 'Castoro', serif;
+    font-weight: 500;
+    line-height: 110%;
+    margin: 0px;
+}
+.sl_content > h1
+{
+    font-size: 45px;
+}
+#req_demo
+{
+    height:45px;
+    width:50%;
+    border:none;
+    background-color: #339966;
+    color:white;
+    border-radius:30px;
+    margin-top:35px;
+}
+#cust_stories
+{
+    height:45px;
+    width:40%;
+    border:none;
+    background-color: #339966;
+    color:white;
+    border-radius:30px;
+    margin-top:35px;
+}
+#cust_stories:hover, #req_demo:hover
+{
+    background-color: #26734d;
+}
+.fr_form label
+{
+    font-size: 13px;
+}
+.fr_form input,.fr_form select
+{
+    width:100%;
+    height:45px;
+    border-radius:5px;
+    border:1px solid #cccccc;
+    margin: 5px 0px 13px;
+    padding-left:3%;
+    outline:none;
+}
+.fr_form select
+{
+    width:104%;
+    height:50px;
+}
