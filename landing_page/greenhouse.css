@@ -438,8 +438,11 @@ body
     
 }
 .footer_head {
-    font-size: 60px;
-    color: white;
+    font-size:55px;
+    font-weight: 500;
+    font-family: 'Castoro', serif;
+    line-height: 130%;
+    color:white;
 }
 .request {
     background-color: steelblue;
