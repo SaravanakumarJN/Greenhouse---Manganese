@@ -25,10 +25,57 @@
             </div>
         </div>
         <div class = "ps_dropdown">
-            <div class = "ps_content"></div>
+            <div class = "ps_content">
+                <div class = "ps_column1">
+                    
+                        <p>Product</p>
+                        <a>Recuriting</a>
+                        <a>Onboarding</a>
+                    <br/>
+                        <p>Segments</p>
+                        <a>Enterprise</a>
+                        <a>Small to midsize</a>
+                    
+                </div>
+                <div class = "ps_column2">
+                    
+                        <p>Solutions</p>
+                        <a>Integrations</a>
+                        <a>Structured hiring</a>
+                        <a>Candidate experience</a>
+                        <a>Diversity, equity & inclusion</a>
+                        <a>More solutions</a>
+                    
+                </div>
+            </div>
         </div>
-        <div class ="res_dropdown">
-            <div class = "res_content"></div>
+        <div class="resr_dropdown">
+            <div class = "resr_content">
+                <div class = "resr_column1">
+                    
+                        <a>Blog</a>
+                        <a>Guidance</a>
+                        <a>Customer stories</a>
+
+                </div>
+                <div class="resr_column2">
+                    <div class="resr_rightcontainer">
+                <div class="resr_thinline"></div>
+                <div class="resr_img-box">
+                    <img class ="resr_img" src = 
+                    "https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Photo-of-a-woman-and-microphone-icon-with-botanical-illustration.png"></img>
+                </div>
+                <div class="resr_contentbox_2">
+                    <p>The Greenhouse podcast</p>
+                    <p class="resr_para">Hiring for what's next</p>
+                    <p class = "resr2_para">Hear from today's talent thought leaders to discover how a winning<br/>talent strategy
+                        drives real business results.
+                    </p>
+                    <div class ="resr_button">Listen Now</div>
+                </div>
+                </div>
+            </div>
+        </div>    
         </div>
         <div class ="about_dropdown">
             <div class = "about_content"></div>
@@ -328,7 +375,7 @@
 
 
             var res = document.querySelector(".res")
-            var res_dropdown = document.querySelector(".res_dropdown")
+            var res_dropdown = document.querySelector(".resr_dropdown")
             res.addEventListener("click", function(){
                 res_dropdown.style.display = "block"
                 nav_bar.style.backgroundColor = "#15372c"
@@ -358,7 +405,7 @@
 
             
             var about = document.querySelector(".about")
-            var about_dropdown = document.querySelector(".about_dropdown")
+            var about_dropdown = document.querySelector(".abs_dropdown")
             about.addEventListener("click", function(){
                 about_dropdown.style.display = "block"
                 nav_bar.style.backgroundColor = "#15372c"
