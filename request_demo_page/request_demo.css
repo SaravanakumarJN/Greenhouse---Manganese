@@ -10,7 +10,7 @@ body
     position:fixed;
     width:100%;
     background-color: white;
-    box-shadow: 0px 1px 5px #cccccc;
+    box-shadow: 0px 0px 1px #cccccc;
 }
 .nav_bar > div
 {
@@ -88,8 +88,32 @@ body
 {
     height:100%;
 }
+.ps_dropdown,.res_dropdown,.about_dropdown,.comm_dropdown
+{
+    width:100%;
+    margin:0px auto;
+    max-width: 1440px;
+    background-color: #15372c;
+    z-index: 1;
+    overflow: hidden;
+    height:0px;
+}
+.ps_content
+{
+    line-height: 100% !important;
+    width:56%;
+    height:310px;
+    padding-top:120px;
+    margin-left:5.5%;
+    display:grid;
+    grid-template-areas:"ps_column1 ps_column2" ;
+    grid-template-rows: 100%;
+    grid-template-columns: 35% 65%;
+    color:white;
+}
 
 
+/*content */
 .content_grid
 {
     display: grid;
@@ -233,14 +257,14 @@ body
 
 
 .footer_outer {
-    background-color: rgb(10, 77, 39);
+    background-color:  #183a2f;
     height: 650px;
     width: 100%;
     display: grid;
     grid-template-areas: "footer_col1 footer_col2 footer_col3 footer_col4";
     grid-template-columns: 28% 20% 20% 32%;
     grid-template-rows: 650px ;
-
+    font-family: 'Castoro', serif;
 }
 
 .head_ele {
@@ -320,13 +344,15 @@ body
     height: 45px;
     width: 270px;
     border-radius: 5px;
+    border:none;
+    outline:none;
 }
 
 .col4_sub {
     border: 2px white;
     width: 100px;
     height: 20px;
-    background-color:rgb(10, 77, 39);
+    background-color:#183a2f;
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px 20px;
@@ -348,7 +374,7 @@ body
 #language {
     width: 250px;
     height: 45px;
-    background-color: rgb(10, 77, 39);
+    background-color: #183a2f;
     margin-top: 15px;
     border: 1px solid white;
     border-radius: 5px;
@@ -362,7 +388,7 @@ body
 }
 
 .footer_end {
-    background-color:rgb(10, 77, 39) ;
+    background-color:#183a2f;
     width: 100%;
     height: 50px;
     display: grid;
