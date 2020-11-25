@@ -14,15 +14,27 @@
         <div class = "nav_bar">
             <div>
                 <div><img src = "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_88a48c3dbf56a798d267665681ad9b79/greenhouse.png"/></div>
-                <div class = "nav_hover">Products & Solution</div>
-                <div class = "nav_hover">Resources</div>
-                <div class = "nav_hover">About us</div>
-                <div class = "nav_hover">Community</div>
+                <div class = "nav_hover ps">Products & Solution</div>
+                <div class = "nav_hover res">Resources</div>
+                <div class = "nav_hover about">About us</div>
+                <div class = "nav_hover comm">Community</div>
                 <div class = "nav_empty"></div>
                 <button id = "nav_signin">Sign in</button>
                 <button id = "nav_req_demo">Request a demo</button>
                 <div><img src = "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"/></div>
             </div>
+        </div>
+        <div class = "ps_dropdown">
+            <div class = "ps_content"></div>
+        </div>
+        <div class ="res_dropdown">
+            <div class = "res_content"></div>
+        </div>
+        <div class ="about_dropdown">
+            <div class = "about_content"></div>
+        </div>
+        <div class ="comm_dropdown">
+            <div class = "comm_content"></div>
         </div>
 
 <!-- top section -->
@@ -281,7 +293,128 @@
         <script type = "text/javascript">
 
 // nav section
+            var nav_bar = document.querySelector(".nav_bar > div")
+            var nav_hover = document.getElementsByClassName("nav_hover")
+            var nav_signin = document.querySelector("#nav_signin")
 
+            var ps = document.querySelector(".ps")
+            var ps_dropdown = document.querySelector(".ps_dropdown")
+            ps.addEventListener("click", function(){
+                ps_dropdown.style.display = "block"
+                nav_bar.style.backgroundColor = "#15372c"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#339966"
+                }
+                ps_dropdown.style.height = "580px"
+                nav_signin.style.color = "white"
+                nav_signin.style.borderColor = "white"
+                nav_signin.style.backgroundColor = "#15372c"
+                ps_dropdown.style.transition = "0.3s"
+            })
+            ps.addEventListener("mouseout", function(){
+                ps_dropdown.style.display = "none"
+                nav_bar.style.backgroundColor = "white"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#15372c"
+                }
+                ps_dropdown.style.height = "0px"
+                nav_signin.style.color = "#15372c"
+                nav_signin.style.borderColor = "#15372c"
+                nav_signin.style.backgroundColor = "white"
+                ps_dropdown.style.transition = "0.3s"
+            })
+
+
+            var res = document.querySelector(".res")
+            var res_dropdown = document.querySelector(".res_dropdown")
+            res.addEventListener("click", function(){
+                res_dropdown.style.display = "block"
+                nav_bar.style.backgroundColor = "#15372c"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#339966"
+                }
+                res_dropdown.style.height = "580px"
+                nav_signin.style.color = "white"
+                nav_signin.style.borderColor = "white"
+                nav_signin.style.backgroundColor = "#15372c"
+                res_dropdown.style.transition = "0.3s"
+            })
+            res.addEventListener("mouseout", function(){
+                res_dropdown.style.display = "none"
+                nav_bar.style.backgroundColor = "white"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#15372c"
+                }
+                res_dropdown.style.height = "0px"
+                nav_signin.style.color = "#15372c"
+                nav_signin.style.borderColor = "#15372c"
+                nav_signin.style.backgroundColor = "white"
+                res_dropdown.style.transition = "0.3s"
+            })
+
+            
+            var about = document.querySelector(".about")
+            var about_dropdown = document.querySelector(".about_dropdown")
+            about.addEventListener("click", function(){
+                about_dropdown.style.display = "block"
+                nav_bar.style.backgroundColor = "#15372c"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#339966"
+                }
+                about_dropdown.style.height = "580px"
+                nav_signin.style.color = "white"
+                nav_signin.style.borderColor = "white"
+                nav_signin.style.backgroundColor = "#15372c"
+                about_dropdown.style.transition = "0.3s"
+            })
+            about.addEventListener("mouseout", function(){
+                about_dropdown.style.display = "none"
+                nav_bar.style.backgroundColor = "white"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#15372c"
+                }
+                about_dropdown.style.height = "0px"
+                nav_signin.style.color = "#15372c"
+                nav_signin.style.borderColor = "#15372c"
+                nav_signin.style.backgroundColor = "white"
+                about_dropdown.style.transition = "0.3s"
+            })
+
+
+            var comm = document.querySelector(".comm")
+            var comm_dropdown = document.querySelector(".comm_dropdown")
+            comm.addEventListener("click", function(){
+                comm_dropdown.style.display = "block"
+                nav_bar.style.backgroundColor = "#15372c"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#339966"
+                }
+                comm_dropdown.style.height = "580px"
+                nav_signin.style.color = "white"
+                nav_signin.style.borderColor = "white"
+                nav_signin.style.backgroundColor = "#15372c"
+                comm_dropdown.style.transition = "0.3s"
+            })
+            comm.addEventListener("mouseout", function(){
+                comm_dropdown.style.display = "none"
+                nav_bar.style.backgroundColor = "white"
+                for(var i = 0; i < nav_hover.length; i++)
+                {
+                    nav_hover[i].style.color = "#15372c"
+                }
+                comm_dropdown.style.height = "0px"
+                nav_signin.style.color = "#15372c"
+                nav_signin.style.borderColor = "#15372c"
+                nav_signin.style.backgroundColor = "white"
+                comm_dropdown.style.transition = "0.3s"
+            })
 
 
 // top section
@@ -412,8 +545,8 @@
 
 
 // bottom section
-                var hire = document.getElementsByClassName("hire")
-                var story = document.getElementsByClassName("stories")
+                var hire = document.querySelector(".hire")
+                var story = document.querySelector(".stories")
 
                 hire.addEventListener('click', go_to_hirepage);
                 story.addEventListener('click', go_to_storypage)
