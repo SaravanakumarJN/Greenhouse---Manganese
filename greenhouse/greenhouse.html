@@ -7,23 +7,320 @@
         <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Applicant tracking system & recruiting software | Greenhouse</title>
-        <link rel = "stylesheet" href="greenhouse.css">
     </head>
+    <style type = "text/css">
+        body
+        {
+            margin:0px auto;
+            font-family:Arial,Helvetica,sans-serif;
+            color:#15372c;
+            max-width:1440px;
+        }
+
+
+/* top section */
+        .top
+        {
+            display: grid;
+            grid-template-areas: "first_left first_right"
+                                "second_left second_right" 
+                                "third_left third_right";
+            grid-template-columns:50% 50% ;
+            grid-template-rows: 880px 800px 800px;
+        }
+        .fl_content
+        {
+            margin: 260px 0px 195px 20%;
+            max-width:70%;
+        }
+        .fl_content > h1
+        {
+            font-size: 65px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 110%;
+        }
+        .fl_content > p
+        {
+            font-size: 18px;
+            line-height: 170%;
+        }
+        .first_right
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-two-women-working.jpg);
+            background-size: cover ;
+        }
+        .fr_content
+        {
+            margin:260px 0px 0px 100px;
+            height:285px;
+            width:350px;
+            background-color:white;
+            border-radius:10px;
+            padding: 50px 0px 0px 60px;
+        }
+        .fr_content > h3
+        {
+            font-size:30px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 120%;
+        }
+        .fr_content > h3, .fr_content > label
+        {
+            margin:10px 0px;
+
+        }
+        #email
+        {
+            height:50px;
+            width:290px;
+            border:1px solid #d9d9d9;
+            border-radius:5px;
+            margin:10px 0px;
+        }
+        #request_demo
+        {
+            height:40px;
+            width:150px;
+            border-radius:25px;
+            background-color:#4d4dff;
+            color:white;
+            border:none;
+            margin:10px 0px;
+            outline:none;
+        }
+        .sl_content, .tr_content
+        {
+            margin: 80px 0px 195px 20%;
+            max-width:65%;
+        }
+        .sl_content > h3, .tr_content > h3
+        {
+            font-size:35px;
+            font-weight: 500;
+            font-family: 'Castoro', serif;
+            line-height: 110%;
+        }
+        .sl_content > div, .tr_content > div
+        {
+            font-size:13px;
+            height:50px;
+            padding-top:25px;
+            padding-left: 20px;
+            margin:0px;
+            border-bottom:1px solid  #8cd9b3;
+            display:flex;
+        }
+        .sl_content > div > span, .tr_content > div > span
+        {
+            margin-left:10px;
+            margin-top: 5px;
+        }
+        #ab_recurit, #ab_onboard
+        {
+            height:45px;
+            width:32%;
+            border-radius:25px;
+            border:none;
+            color:white;
+            background-color: #339966;
+            margin-top:45px;
+            outline: none;
+        }
+        .second_right
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Recruiting-Scorecard2m.jpg);
+            background-size: 100% 100%;
+        }
+        .third_left
+        {
+            background-image: url(https://grnhse-marketing-site-assets.s3.amazonaws.com/production/MHome-Image-7_2x.png);
+            background-size: 100% 100%;
+        }
+
+/* mid section */
+        .mid-page{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 530px;
+            grid-template-areas: "mid-left mid-right"; 
+        } 
+
+        .button{
+            height: 20px;
+            width: 90px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(44, 99, 52);
+            color: white;
+            padding: 15px;
+            
+        }
+        .button:hover{
+            background-color: rgb(2, 31, 2);
+            transition: 0.8s;
+        }
+        .img-1{
+            width: 100%;
+            height: 530px;
+        }
+        .midle-cont{
+            height: 265px;
+            width: 500px;
+            margin: 150px auto;
+            
+        }
+        .text{
+            font-size: 20px;
+        }
+
+
+/* bottom section */
+        .bottom_div {
+            display: grid;
+            grid-template-areas: "quadrant_1 quadrant_2"
+                                 "quadrant_3 quadrant_4";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 300px 500px 530px;
+           
+        }
+        /* .bottom_div > div {
+            border: 1px solid black;
+        } */
+        .space_1 {
+            margin: 40px 80px;
+        }
+        .quadrant_1 {
+            background-color: rgb(20, 39, 20);
+        }
+        .big_font {
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+
+        }
+        .space_2 {
+            margin: 60px 110px;
+            width: 60%;
+        }
+        .sub_head {
+            font-size: 30px;
+            font-family: Untitled Sans,Arial,Helvetica,sans-serif;
+            cursor: pointer;
+            color: rgb(11, 29, 19);
+
+        }
+        .sea_green {
+            color: seagreen;
+        }
+        .space_4 {
+            margin: 60px 110px;
+            width: 60%;
+        }
+        .hire {
+            background-color: seagreen;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 30px;
+            width: 170px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .stories {
+            background-color: seagreen;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 30px;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+        .space_5 {
+            margin: 130px;
+        }
+        .space_5 > h1 {
+            font-size: 40px;
+        }
+        .space_6  {
+           width: 70%;
+           margin: 100px;
+        }
+        .small_img > img {
+            height: 50px;
+            width: 200px;
+        }
+        .space_6 {
+            display: grid;
+            grid-template-areas: "logo_1 logo_2"
+                                 "logo_3 logo_4"
+                                 "logo_5 logo_6";
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 50px;
+        }
+        .space_3 > img {
+            width: 100%;
+            height: 500px;
+        }
+        .line {
+            background-color: seagreen;
+            width: 100%;
+            height: 1px;
+            margin-top: 54px;
+        }
+        .vline {
+            background-color: seagreen;
+            height: 530px;
+            width: 2px;
+            margin-left: 533px;
+            
+        }
+
+        /* last_second_footer   */
+        
+        .footer_1 {
+            background-color: rgb(2, 70, 31);
+            display: grid;
+            grid-template-areas: "left_part right_part";
+            grid-template-columns: 50% 50%;
+            grid-template-rows:500px ;
+        }
+
+        .left_content {
+            width: 80%;
+            height: 300px;
+            margin: 100px ;
+            
+        }
+        .footer_head {
+            font-size: 60px;
+            color: white;
+        }
+        .request {
+            background-color: steelblue;
+            width: 150px;
+            height: 30px;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            padding: 10px 30px;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+
+        .right_img {
+            width: 100%;
+            height: 500px;
+        }
+
+    </style>
     <body>
-<!-- nav section -->
-        <div class = "nav_bar">
-            <div>
-                <div><img src = "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_88a48c3dbf56a798d267665681ad9b79/greenhouse.png"/></div>
-                <div class = "nav_hover">Products & Solution</div>
-                <div class = "nav_hover">Resources</div>
-                <div class = "nav_hover">About us</div>
-                <div class = "nav_hover">Community</div>
-                <div class = "nav_empty"></div>
-                <button id = "nav_signin">Sign in</button>
-                <button id = "nav_req_demo">Request a demo</button>
-                <div><img src = "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"/></div>
-            </div>
-        </div>
+
 
 <!-- top section -->
         <div class = "top">
@@ -151,8 +448,7 @@
                </div>
            </div>
         </div>
-
-         
+        
         <!-- last_Second_footer -->
         <div class="footer">
             <div class="footer_1">
@@ -163,126 +459,14 @@
                     </div>
                </div>
                <div class="right_part">
-                   <img src="footer_leaves_img.png" alt="green leaves" class="right_img">
+                   <img src="footer_img.png" alt="green leaves" class="right_img">
                </div>
             </div>
          </div>
 
-         <!-- footer -->
-         <div class="footer_outer">
-            <div class="footer_col1">
-               <div class="col1_box1">
-                 <div class="col1_head col1_common">Products</div>
-                       
-                    <a href="" class="head_ele">Recruiting</a>
-                    <a href="" class="head_ele">Onboarding</a><br>
-                    <a href="" class="head_ele">Pricing</a><br>
-                       
-                </div>
-    
-                <div class="col1_box2">
-                     <div class="col1_head col1_common">Segments</div>
-                        <a href="" class="head_ele">Enterprise</a><br>
-                        <a href="" class="head_ele">Small to midsize</a><br>
-                </div>
-    
-                <div class="col1_box3">
-                    <div class="col1_head col1_common">Solutions</div>
-                        <a class="head_ele" href="" href="">Integrations</a>
-                        <a class="head_ele" href="" href="">Structured hiring</a><br>
-                        <a class="head_ele" href="">Candidate experience</a><br>
-                        <a class="head_ele" href="">Diversity, equity & inclusion</a><br>
-                        <a class="head_ele" href="">More solutions</a>
-                </div>  
-                
-                <div class="col1_icons">
-                    <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Facebook_200116_235458.svg" alt="Facebook_200116_235458">
-                    <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/linkedin.svg" alt="linkedin">
-                    <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/twitter.svg" alt="twitter">
-                    <img src="https://grnhse-marketing-site-assets.s3.amazonaws.com/production/youtube.svg" alt="youtube">
-                </div>
-            </div>
-                
-            <div class="footer_col2">   
-                <div class="col2_box4">
-                    <div class="col1_head col1_common">Resources</div>
-                        <a class="head_ele" href="">Blog</a>
-                        <a class="head_ele" href="">Guidance</a>
-                        <a class="head_ele" href="">Customer stories</a>
-                        <a class="head_ele" href="">Support</a>
-                        <a class="head_ele" href="">Developer resources</a>
-                </div>  
-                
-                <div class="col2_box5">
-                    <div class="col1_head col1_common">Platform</div>
-                        <a class="head_ele" href="">Services</a>
-                        <a class="head_ele" href="">Mobile</a>
-                        <a class="head_ele" href="">APIs</a>
-                        <a class="head_ele" href="">Security</a>
-                        <a class="head_ele" href="">GDPR</a>
-                </div>   
-            </div>
-            <div class="footer_col3">   
-                <div class="col3_box6">
-                    <div class="col1_head col1_common">About us</div>
-                        <a class="head_ele" href="">Mission</a>
-                        <a class="head_ele" href="">Belonging</a>
-                        <a class="head_ele" href="">company</a>
-                        <a class="head_ele" href="">Careers</a>
-                        <a class="head_ele" href="">Press & awards</a>
-                        <a class="head_ele" href="">Contact</a>
-                </div>   
-    
-                <div class="col3_box7">
-                    <div class="col1_head col1_common">Community</div>
-                        <a class="head_ele" href="">Events</a>
-                        <a class="head_ele" href="">Open</a>
-                        <a class="head_ele" href="">Talent Makers</a>
-                        <a class="head_ele" href="">Newsletter</a>
-               </div>
-            </div>
-            <div class="footer_col4">
-                <div class="col4_box8">
-                    <div class="box8_con1">Modern Recruiter newsletter</div><br><br>
-                    <div class="box8_con2">Our bi-weekly newsletter full of inspiration, podcasts, trends and news.</div><br><br>
-                    <div>
-                        <label for="email"><span class="star_gold">*  </span>Email address</label>
-                        <br><br>
-                        <input class="col4_mail" type="email" >
-                        <br><br>
-                    </div>
-                    <div class="col4_sub">Subscribe</div>
-                </div>
-    
-                <div class="col4_box9">
-                    <div>Choose your language</div>
-                    <select name="lang" id="language" >
-                        <option value="ENGLISH">ENGLISH</option>
-                        <option value="GERMAN">GERMAN</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="footer_end">
-            <div class="footer_bottom_left">
-                <p> ©2020 Greenhouse Software, Inc.</p>
-                <p>“Hire for what’s next” and “Greenhouse Talent Makers” are trademarks of Greenhouse Software.</p>
-            </div>
-            <div class="footer_bottom_right1">
-               <a href="" class="footer_bottom_right1"> privacy policies</a>
-            </div>
-            <div class="footer_bottom_right1">
-                <a href="" class="footer_bottom_right1">Terms of service</a>
-            </div>
-        </div>
-
 
 
         <script type = "text/javascript">
-
-// nav section
-
-
 
 // top section
                 var demo = document.getElementById("request_demo")
@@ -419,11 +603,11 @@
                 story.addEventListener('click', go_to_storypage)
 
                 function go_to_hirepage(e) {
-                    e.target = "blank"
+                    e.target = blank
                 }
 
                 function go_to_storypage(e) {
-
+                    e.target = blank
                 }
         </script>
     </body>
