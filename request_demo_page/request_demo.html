@@ -81,9 +81,75 @@
         <div class ="about_dropdown">
             <div class = "about_content"></div>
         </div>
-        <div class ="comm_dropdown">
-            <div class = "comm_content"></div>
+
+
+
+        <!-- Navbar aboutus HTML -->
+
+        <div class="abs_dropdown">
+            <div class = "abs_content">
+                <div class = "abs_column1">
+                    
+                        <a>Mission</a>
+                        <a>Belonging</a>
+                        <a>Company</a>
+                        <a>Careers</a>
+                        <a>Press & awards</a>
+                        <a>Contact</a>
+
+                </div>
+                <div class="abs_column2">
+                    <div class="abs_rightcontainer">
+                <div class="abs_thinline"></div>
+                <div class="abs_img-box">
+                    <img class ="abs_img" src = "https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Greenhouse-Report-Builder-n.png"></img>
+                </div>
+                <div class="abs_contentbox_2">
+                    <p>Just Released</p>
+                    <p class="abs1_para">All-new Greenhouse Report Builder</p>
+                    <p class = "abs2_para">Create custom multi-metric reports with our intuitive report builder<br/>
+                        tool and make powerful insights available to stakeholders across your organization.
+                    </p>
+                    <div class ="abs_button">Take a Look</div>
+                </div>
+                </div>
+            </div>
+        </div>    
         </div>
+
+
+         
+        <!-- Navbar Community HTML part -->
+
+        <div class="com_dropdown">
+            <div class = "com_content">
+                <div class = "com_column1">
+                    
+                        <a>Events</a>
+                        <a>Open</a>
+                        <a>Talent Makers</a>
+                        <a>Newsletter</a>
+
+                </div>
+                <div class="com_column2">
+                    <div class="com_rightcontainer">
+                <div class="com_thinline"></div>
+                <div class="com_img-box">
+                    <img class ="com_img" src = "https://grnhse-marketing-site-assets.s3.amazonaws.com/production/Photo-of-a-woman-waving-at-a-tablet-screen-n.png"></img>
+                </div>
+                <div class="com_contentbox_2">
+                    <p>Save the date</p>
+                    <p class="com_para">Greenhouse Open 2021</p>
+                    <p class = "com_para1">Join talent practitioners, business leaders, and hiring managers for a fully digital,
+                        highly interactive conference.
+                    </p>
+                    <div class ="com_button">Learn More</div>
+                </div>
+                </div>
+            </div>
+        </div>   
+        </div> 
+        
 
 <!-- content -->
         <div class = "content_grid">
@@ -613,7 +679,7 @@
 
             
             var about = document.querySelector(".about")
-            var about_dropdown = document.querySelector(".about_dropdown")
+            var about_dropdown = document.querySelector(".abs_dropdown")
             about.addEventListener("click", function(){
                 about_dropdown.style.display = "block"
                 nav_bar.style.backgroundColor = "#15372c"
@@ -643,7 +709,7 @@
 
 
             var comm = document.querySelector(".comm")
-            var comm_dropdown = document.querySelector(".comm_dropdown")
+            var comm_dropdown = document.querySelector(".com_dropdown")
             comm.addEventListener("click", function(){
                 comm_dropdown.style.display = "block"
                 nav_bar.style.backgroundColor = "#15372c"
