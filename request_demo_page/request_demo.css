@@ -10,7 +10,6 @@ body
     position:fixed;
     width:100%;
     background-color: white;
-    box-shadow: 0px 0px 1px #cccccc;
 }
 .nav_bar > div
 {
