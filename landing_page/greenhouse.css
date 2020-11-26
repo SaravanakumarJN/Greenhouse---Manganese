@@ -101,17 +101,42 @@ body
 }
 .ps_content
 {
-    line-height: 100% !important;
+    /* line-height: 100% !important; */
     width:56%;
-    height:310px;
-    padding-top:120px;
-    margin-left:5.5%;
+    height:400px;
+    padding-top:100px;
+    margin:0 0 2% 8.5%;
     display:grid;
     grid-template-areas:"ps_column1 ps_column2" ;
     grid-template-rows: 100%;
     grid-template-columns: 35% 65%;
     color:white;
+    /* border: 1px solid black; */
+    color: rgb(106, 176, 151);
 }
+.ps_content p{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.ps_content a{
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin: 1.5% auto ;
+    padding: 5px;
+    cursor: pointer;
+}
+.ps_content a:hover
+{
+    color: white;
+    text-decoration: underline;
+    transition: 0.7s;
+    /* text-underline-offset: 5px; */
+}
+
+
 
 
 /* top section */
