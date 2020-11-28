@@ -14,7 +14,7 @@ To make the pixel perfect clone (front-end) of the site [greenhouse.io](https://
 * JS DOM (Basic JavaScript).
 
 ## About Greenhouse
-Greenhouse is a service provider who provides software for enabling an effective and a smoother Hirindg process.
+Greenhouse is a service provider who provides software for enabling an effective and a smoother Hiring process.
 
 ## Screenshots of our work
 ![Landing page](rm_pic/landing_page.png)
