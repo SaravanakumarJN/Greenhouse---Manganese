@@ -15,11 +15,11 @@ body{
 }
 .signin_right {
     background-color: white;
-    height: 105vh;
+    height: 100vh;
 }
 
 .right_content {
-    margin: 190px 70px;
+    margin: 190px 70px 0px;
 }
 .right_black {
     font-size: 25px;
